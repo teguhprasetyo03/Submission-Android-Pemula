@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="180dp"
+    android:layout_height="320dp"
+    android:clickable="true"
+    android:foreground="@android:drawable/list_selector_background"
+    xmlns:tool="http://schemas.android.com/tools"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    cardview:cardCornerRadius="8dp"
+    android:id="@+id/mainmenuicon">
+
+    <LinearLayout
+        android:id="@+id/list_books_linear"
+        android:layout_width="match_parent"
+        android:layout_height="358dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/img_item_photos"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:background="#2d2d2d"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/tv_item_name"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            tool:text="@string/programming_name" />
+
+        <Button
+            android:id="@+id/btn_programming"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:scaleType="centerCrop"
+            android:text="@string/detail"
+            android:background="@android:color/holo_blue_dark"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
